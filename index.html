@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Editable Resume Builder</h1>
+        <div class="resume">
+            <section id="personal-info">
+                <h2>Personal Information</h2>
+                <div>
+                    <label>Name:</label>
+                    <input type="text" id="name" value="Your Name">
+                </div>
+                <div>
+                    <label>Email:</label>
+                    <input type="email" id="email" value="your.email@example.com">
+                </div>
+                <div>
+                    <label>Phone:</label>
+                    <input type="tel" id="phone" value="1234567890">
+                </div>
+            </section>
+            <section id="education">
+                <h2>Education</h2>
+                <div>
+                    <label>Degree:</label>
+                    <input type="text" id="degree" value="Bachelor of Science in Computer Science">
+                </div>
+                <div>
+                    <label>Institution:</label>
+                    <input type="text" id="institution" value="Montclair State University">
+                </div>
+                <div>
+                    <label>Graduation Date:</label>
+                    <input type="date" id="graduation-date" value="2020-05-15">
+                </div>
+            </section>
+            <section id="work-experience">
+                <h2>Work Experience</h2>
+                <div>
+                    <label>Job Title:</label>
+                    <input type="text" id="job-title" value="Software Engineer">
+                </div>
+                <div>
+                    <label>Company:</label>
+                    <input type="text" id="company" value="XYZ Corp">
+                </div>
+                <div>
+                    <label>Duration:</label>
+                    <input type="text" id="duration" value="June 2020 - Present">
+                </div>
+                <div>
+                    <label>Description:</label>
+                    <textarea id="description">Developed various web applications and services.</textarea>
+                </div>
+            </section>
+            <section id="skills">
+                <h2>Skills</h2>
+                <div>
+                    <label>Skills:</label>
+                    <textarea id="skills-text">JavaScript, TypeScript, HTML, CSS, React</textarea>
+                </div>
+            </section>
+            <button id="generate-btn">Generate Resume</button>
+        </div>
+        <div id="generated-resume" class="resume"></div>
+    </div>
+    <script src="Script.js"></script>
+</body>
+</html>
